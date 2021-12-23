@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Visualisasi Pelabuhan Ketapang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#hal1" aria-controls="hal1" role="tab" data-toggle="tab" id="marine-tf">Pelabuhan Ketapang - Marine Traffic</a></li>
+    <li role="presentation"><a href="#hal2" aria-controls="hal2" role="tab" data-toggle="tab" id="bps-jatim">Pelabuhan Ketapang - BPS Jawa Timur</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="content">
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  $(document).ready( () => {
+    $('#content').html('<iframe id="hal1" width="100%" height="800" src="https://datastudio.google.com/embed/reporting/3d6e1ced-1b43-4bfe-bd89-60c26318c871/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>')
+    $('#marine-tf').click( () => {
+      $('#content').html('<iframe id="hal1" width="100%" height="800" src="https://datastudio.google.com/embed/reporting/3d6e1ced-1b43-4bfe-bd89-60c26318c871/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>')
+    } )
+
+    $('#bps-jatim').click( () => {
+      $('#content').html('<iframe id="hal2" width="100%" height="800" src="https://datastudio.google.com/embed/reporting/c98b254b-64c3-4dfd-93af-d66bdc213969/page/p_xgbxgab6pc" frameborder="0" style="border:0" allowfullscreen></iframe>')
+    })
+  })
+</script>
+
+</body>
+</html>
